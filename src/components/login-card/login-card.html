@@ -1,0 +1,22 @@
+<div class="card-container">
+    <div class="login-card">
+      <div>
+        <div class="username">
+          <span>Username</span>
+          <ion-item>
+            <input [value]="data.name" (input)="setName($event.target.value)" placeholder="User" />
+          </ion-item>
+        </div>
+        <div class="password">
+          <span>Password</span>
+          <ion-item>
+            <input [type]="pa" placeholder="Password" />
+          </ion-item>
+        </div>
+        <div class="login-buttons">
+          <button (click)="onSignUp($event)">Signup</button>
+          <button (click)="onLogin($event)">Login</button>
+        </div>
+        </div>
+    </div>
+</div>
